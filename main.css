@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box; 
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+    background-color: hsl(217, 54%, 11%);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 2rem;
+    line-height: 2.2rem
+}
+
+.img-fluid { 
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+}
+
+.card {
+    font-size: 1.6rem;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 33rem;
+    border-radius: 5%;
+    padding: 2rem;
+    place-self: center;
+    box-shadow: hsl(215deg 53% 5%) 0px 20px 30px -10px;
+}
+
+.price-time p{
+    font-size: 1.6rem;
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-time p:first-child{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;   
+}
+
+.price-time svg {
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 1.25rem;
+    padding-bottom: 0.75rem;   
+}
+
+.creator img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 3.5rem;
+    margin-right: 2rem;
+}
+
+.creator p {
+   padding-bottom: 0;
+   font-size: 1.4rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.ntf-img {
+    position: relative;
+}
+
+.ntf-img:hover .view-icon {
+  opacity: 100;
+  transition: .5s ease;
+}
+
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 1000;
+}
+
+.ntf-img .blue-effect {
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+
+.blue-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    border-radius: 5%;
+}
+
+
+.ntf-img:hover .blue-effect {
+    background: hsla(178, 100%, 50%, 50%);
+    cursor: pointer;
+    transition: .5s ease; 
+}
